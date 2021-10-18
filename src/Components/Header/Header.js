@@ -1,19 +1,36 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+
+import { Link } from 'react-router-dom';
+import Service from '../Service/Service';
 
 const Header = () => {
     return (
-        <div>
-            <Navbar bg="primary" variant="dark">
-    <Container>
-    
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
+        <div  >
+          <div className="row">
+            <div className="col-md-2">
+
+            </div>
+            <div className="col-md-10">
+              <Link to='/home'>
+                {""}
+                <li>Home</li>
+              </Link>
+              <Link to='/about'>
+                {""}
+                <li>About</li>
+              </Link>
+              <Link to='/service'>
+                {""}
+                <li>Service</li>
+              </Link>
+              <Link to='/care'>
+                {""}
+                <li>Care</li>
+              </Link>
+            </div>
+          </div>
+          
+  <Service></Service>
         </div>
     );
 };
