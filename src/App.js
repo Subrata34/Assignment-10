@@ -23,6 +23,9 @@ function App() {
       <Route path='/home'>
         <Home></Home>
       </Route>
+      <Route path='/details/:serviceId'>
+        <About></About>
+      </Route>
       <Route path='/about'>
         <About></About>
       </Route>
