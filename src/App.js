@@ -1,13 +1,13 @@
 
 import './App.css';
-import Header from './Components/Header/Header';
+
 import { BrowserRouter, Switch,Route} from 'react-router-dom';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import NotFound from './NotFound/NotFound';
 import Login from './Components/Login/Login';
 import Authprovider from './context/Authprovider';
-import Service from './Components/Service/Service';
+
 import Services from './Components/Service/Services';
 import Register from './Components/Register/Register';
 
