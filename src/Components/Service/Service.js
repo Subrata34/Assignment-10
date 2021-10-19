@@ -1,6 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import {  Row } from 'react-bootstrap';
+
 import Box from '../Box/Box';
+
+import './Service.css';
 
 
 const Service = () => {
@@ -12,16 +15,23 @@ const Service = () => {
 
     },[])
     return (
-        <div>
+      
+       
+        <div className="name-radius">
+         
+          
             <h1>Consouling Doctor </h1>
-       <Row xs={1} md={3} className="g-4">
+       <Row xs={1} md={2} className="g-3">
     { 
     name.map(data=><Box 
     person={data}
     ></Box>)
     }
   </Row>
+  
         </div>
+  
+      
     );
 };
 
